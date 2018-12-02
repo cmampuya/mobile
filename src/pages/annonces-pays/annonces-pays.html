@@ -1,0 +1,129 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ANNONCES</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="annonces-pays-content">
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  		<div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+			<div class="annonces-content">
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar item-start="">
+      <img src="../assets/imgs/sarah-avatar.png.jpeg">
+    </ion-avatar>-->
+	  <ion-label>
+    <h2>Pays</h2>
+    <p>12 Mai 2018</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content class="card-content">
+    <p>La coordination du pays vous informer qu"il organise un seminaire pour les coordonnateur de communion. 
+	Ce seminaire se tiendra le Dimanche 8 Juillet 2018 dans la salle LE POINT à Villiers-sur-Marne de 8h à 17h.
+	Tous les coordonnateurs de communion de maisonnée sont aimablement attendu à cette formation</p>
+	
+	<p>Que Dieu vous bénisse</p>
+  </ion-card-content>
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small (tap)="tapEvent($event)">
+        <ion-icon name="thumbs-up"></ion-icon>
+        {{tap}} aimes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        64 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar>
+      <img src="../assets/imgs/ian-avatar.png">
+    </ion-avatar>-->
+	<ion-label>
+    
+    <h2>Pays</h2>
+    <p>12 Mai 2018</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content class="card-content">
+    <p>La coordination du pays vous informer qu"il organise un seminaire pour les coordonnateur de communion. 
+	Ce seminaire se tiendra le Dimanche 8 Juillet 2018 dans la salle LE POINT à Villiers-sur-Marne de 8h à 17h.
+	Tous les coordonnateurs de communion de maisonnée sont aimablement attendu à cette formation</p>
+	
+	<p>Que Dieu vous bénisse</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small (tap)="tapEvent($event)">
+        <ion-icon name="thumbs-up"></ion-icon>
+        {{tap}} aimes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        66 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar item-start="">
+      <img src="../assets/imgs/sarah-avatar.png.jpeg">
+    </ion-avatar>-->
+	  <ion-label>
+    <h2>Pays</h2>
+    <p>12 Mai 2018</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content class="card-content">
+    <p>La coordination du pays vous informer qu"il organise un seminaire pour les coordonnateurs de communion. 
+	Ce seminaire se tiendra le Dimanche 8 Juillet 2018 dans la salle LE POINT à Villiers-sur-Marne de 8h à 17h.
+	Tous les coordonnateurs de communion de maisonnée sont aimablement attendus à cette formation.</p>
+	
+	<p>Que Dieu vous bénisse</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small (tap)="tapEvent($event)">
+        <ion-icon name="thumbs-up"></ion-icon>
+        {{tap}} aimes
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        64 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+</div>
+	</div>
+</ion-content>

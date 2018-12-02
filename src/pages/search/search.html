@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>FILTRE D'ANNONCES</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="search-gen-content" padding>
+<div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+		<div class="search-content">
+	<ion-row>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAnnoncesProvinces()">
+					VOTRE PROVINCE
+				</button>
+			</ion-buttons>
+		</ion-col>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAnnoncesSecteurs()">
+					VOTRE SECTEUR
+				</button>
+			</ion-buttons>
+		</ion-col>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAnnoncesRameaux()">
+					VOTRE RAMEAU
+				</button>
+			</ion-buttons>
+		</ion-col>
+	</ion-row>
+		<ion-row>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAutresProvinces()">
+					AUTRES PROVINCES
+				</button>
+			</ion-buttons>
+		</ion-col>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAutresSecteurs()">
+					AUTRES SECTEURS
+				</button>
+			</ion-buttons>
+		</ion-col>
+		<ion-col>
+			<ion-buttons start>
+				<button ion-button icon-only color="primary" block (click)="getAutresRameaux()">
+					AUTRES RAMEAUX
+				</button>
+			</ion-buttons>
+		</ion-col>
+	</ion-row>
+</div>
+</div>
+</ion-content>

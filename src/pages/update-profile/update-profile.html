@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Mise à jour profile</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content class="update-gen-content" padding>
+<div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+		<div class="update-content">
+  <div class="update-box">
+    <ion-grid>
+    <form (ngSubmit)="register()" #registerForm="ngForm">
+      <ion-row>
+        <ion-col>
+		  <ion-label>Sexe :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-item>
+			  <ion-label>Selectionner</ion-label>
+			  <ion-select >
+				<ion-option value="f">Monsieur</ion-option>
+				<ion-option value="m">Madame</ion-option>
+			  </ion-select>
+			</ion-item>
+		</ion-col>
+	  </ion-row>
+	  <ion-row>
+		<ion-col>
+		  <ion-label>NOM :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-input type="text" placeholder="Nom" name="nom" required></ion-input>
+        </ion-col>
+		</ion-row>
+		<ion-row>
+		<ion-col>
+		  <ion-label>PRENOM :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-input type="text" placeholder="Prenom" name="prenom" required></ion-input>
+        </ion-col>
+	  </ion-row>
+	  	  <ion-row>
+		<ion-col>
+		  <ion-label>DATE DE NAISSANCE :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-input type="date" placeholder="DATE DE NAISSANCE" name="date_de_nais" required></ion-input>
+        </ion-col>
+		</ion-row>
+			  <ion-row>
+		<ion-col>
+		  <ion-label>ADRESSE MAIL :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-input type="text" placeholder="ADRESSE MAIL" name="adresse_mail" required></ion-input>
+        </ion-col>
+		</ion-row>
+		<ion-row>
+		<ion-col>
+		  <ion-label>MOT DE PASSE :</ion-label>
+		</ion-col>
+		<ion-col>
+			<ion-input type="password" placeholder="MOT DE PASSE" name="password" required></ion-input>
+        </ion-col>
+	  </ion-row>
+	  <ion-row xs>
+		<ion-label>Merci de choisir vos entités de dans la maisonnée</ion-label>
+	  </ion-row>
+	<ion-row>
+        <ion-col>
+		  <ion-list inset>
+			  <ion-item>
+				<ion-label>Province</ion-label>
+				<ion-select>
+				  <ion-option value="nes">Ile de France</ion-option>
+				  <ion-option value="n64">Occitanie</ion-option>
+				  <ion-option value="ps">Rhones</ion-option>
+				</ion-select>
+			  </ion-item>
+            
+			  <ion-item>
+				<ion-label>Secteur</ion-label>
+				<ion-select>
+				  <ion-option value="nes">Paris Nord</ion-option>
+				  <ion-option value="n64">Paris Centre</ion-option>
+				  <ion-option value="ps">Paris Sud</ion-option>
+				</ion-select>
+			  </ion-item>
+			  
+			  <ion-item>
+				<ion-label>Rameau</ion-label>
+				<ion-select>
+				  <ion-option value="nes">Paris</ion-option>
+				  <ion-option value="n64">Drancy</ion-option>
+				  <ion-option value="ps">Rhones</ion-option>
+				</ion-select>
+			  </ion-item>
+			  
+			  <ion-item>
+				<ion-label>Communion</ion-label>
+				<ion-select>
+				  <ion-option value="nes">Gagny</ion-option>
+				  <ion-option value="n64">Noisy</ion-option>
+				  <ion-option value="ps">Rosny</ion-option>
+				</ion-select>
+			  </ion-item>
+            
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" block type="submit" [disabled]="!registerForm.form.valid">Envoyer Demande</button>
+        </ion-col>
+      </ion-row>
+      
+    </form>
+	</ion-grid>
+  </div>
+    </div>
+	  </div>
+  
+  
+</ion-content>

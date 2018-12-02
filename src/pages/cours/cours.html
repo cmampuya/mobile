@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cours</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="cours-content">
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+          <div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+		<div class="cours-content">
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar item-start="">
+      <img src="../assets/imgs/sarah-avatar.png.jpeg">
+    </ion-avatar>-->
+	  <ion-label>
+    <h2>Cours Fondamental</h2>
+    <p>May 12, 1984</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content class="card-content">
+    <p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small color="secondary">
+		Inscription
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        64 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar>
+      <img src="../assets/imgs/ian-avatar.png">
+    </ion-avatar>-->
+	<ion-label>
+    
+    <h2>Cours Intermediaire</h2>
+    <p>June 28, 1990</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content  class="card-content">
+    <p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small color="secondary">
+		Inscription
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        64 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-item>
+	<!--<ion-avatar item-start="">
+      <img src="../assets/imgs/sarah-avatar.png.jpeg">
+    </ion-avatar>-->
+	  <ion-label>
+    <h2>Cours vaincre l'adversaire</h2>
+    <p>May 12, 1984</p>
+  </ion-label>
+  </ion-item>
+
+  <ion-card-content class="card-content">
+    <p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button icon-left ion-button small color="secondary">
+		Inscription
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left small>
+        <ion-icon name="text"></ion-icon>
+        64 Comments
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+</div>
+</div>
+</ion-content>

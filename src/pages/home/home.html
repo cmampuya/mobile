@@ -1,0 +1,55 @@
+
+<ion-header >
+  <ion-navbar color="primary">
+	<button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+	</button>
+	<!--<ion-buttons end>
+	  <button ion-button icon-only (click)="getprofil()">
+		<ion-icon name="person"></ion-icon>
+	  </button>
+	</ion-buttons>-->
+	<ion-title>
+		<p>LA VOIE EN FRANCE</p>
+	</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="home-gen-content">
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+   <div id="div1" style="overflow: auto;display:flex;flex-direction:column;align-content:stretch;">
+     <!--<div id="div2" style="height: 100%;overflow: auto; border:1px solid red;flex-grow:1;">
+       <div id="div3" style="border:5px solid yellow;">-->
+			<div class="home-content">
+				<ion-card>
+					<img src="../assets/imgs/themeposter.png" class="full-image">
+				</ion-card>
+				<ion-card>
+					<ion-card-content>
+						<p align="center"><b>La lecture du jour</b></p>
+						<p align="left"><b>Psaumes 119:1-2 : </b></p>
+						<p align="justify"><i>1. Heureux ceux qui sont intègres dans leur voie, Qui marchent selon la loi de l'Éternel!</i></p>
+						<p align="justify"><i>2.Heureux ceux qui gardent ses préceptes, Qui le cherchent de tout leur coeur,</i></p>
+					</ion-card-content>
+					<ion-row>
+						<ion-col>
+							<button ion-button icon-left small (tap)="tapEvent($event)">
+								<ion-icon name="thumbs-up"></ion-icon>
+								{{tap}} aimes
+							</button>
+						</ion-col>
+						<ion-col>
+							<button ion-button icon-left small>
+								<ion-icon name="text"></ion-icon>
+								<div>4 Comments</div>
+							</button>
+						</ion-col>
+					</ion-row>
+				</ion-card>
+			</div>
+	   <!--</div>
+     </div>-->
+   </div>
+
+</ion-content>

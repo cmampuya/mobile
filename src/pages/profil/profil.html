@@ -1,0 +1,80 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>PROFILE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="profile-gen-content">
+<div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+		<div class="profile-content">
+	<form #formCtrl="ngForm">
+		<div align="center" *ngIf="formCtrl.form.valid">
+          
+			<!--<img class="profile-image" src="../assets/imgs/images_profil.png">-->
+			
+			<img class="profile-image" src="../assets/imgs/login_icon.png" style="max-width:20%;height:auto;">
+			<!--<h4>{{person.name}}, {{person.company}}</h4>
+			<h5>{{age}} years old</h5>-->
+			<p style="font-size:75%;">MAMPUYA NGANGU, Chrisco</p>
+			<p style="font-size:65%;">33 ans</p>
+		</div>
+		<ion-grid>
+			<ion-list>
+				<ion-row>
+					<ion-col>
+						<ion-item>
+							<ion-label>Province :</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col>
+						<ion-item>
+							<ion-input disabled="true" type="text" placeholder="Ile de France"></ion-input>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-item>
+							<ion-label>Secteur :</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col>
+						<ion-item>
+							<ion-input disabled="true" type="text" placeholder="Paris Centre"></ion-input>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-item>
+							<ion-label>Rameau :</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col>
+						<ion-item>
+							<ion-input disabled="true" type="text" placeholder="Drancy"></ion-input>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-item>
+							<ion-label>Communion :</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col>
+						<ion-item>
+							<ion-input disabled="true" type="text" placeholder="Bondy"></ion-input>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+			</ion-list>
+		</ion-grid>
+	</form>
+	<button color="secondary" [disabled]="!formCtrl.form.valid" ion-button (click)="updateProfil()" small>Modifier</button>
+    </div>
+</div>
+</ion-content>

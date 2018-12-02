@@ -1,0 +1,124 @@
+page-liste-croyants {
+
+table {
+	background:#666;
+	border-collapse:collapse;
+	width:100%;
+}
+th {
+	color:white;
+}
+th, td {
+	text-align:center;
+	padding:5px;
+	border-right:1px solid black;
+}
+th:last-child, td:last-child {
+	border-right:0;
+}
+tbody tr:nth-child(odd) {
+	background:#ccc;
+}
+tbody tr:nth-child(even) {
+	background:#aaa;
+}
+@media screen and (max-width:800px) {
+	table {
+		display:flex;
+	}
+	thead {
+		width:20%;
+		min-width:90px;
+	}
+	tbody {
+		flex:1;
+	}
+	tr {
+		display:flex;
+		flex-direction:column;
+	}
+	th, td {
+		text-align:left;
+		border-right:0;
+		border-bottom:1px solid black;
+	}
+	tr:last-child td:last-child {
+		border-bottom:0;
+	}
+	tbody tr:not(:first-child) td::before {
+		position:absolute;
+		content:'N°';
+		color:white;
+		font-weight:bold;
+		width:calc(20% - 13px);
+		min-width:90px;
+		padding:5px;
+		border-bottom:1px solid black;
+		margin-left:calc(-20% - 2px);
+		margin-top:-5px;
+	}
+	tbody tr:last-child td:last-child::before {
+		border-bottom:0;
+	}
+	tbody tr:not(:first-child) td:nth-of-type(2)::before {
+		content:'SEXE';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(3)::before {
+		content:'NOM';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(4)::before {
+		content:'PRENOM';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(5)::before {
+		content:'DATE NAIS';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(6)::before {
+		content:'MAIL';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(7)::before {
+		content:'PROVINCE';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(8)::before {
+		content:'SECTEUR';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(9)::before {
+		content:'RAMEAU';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(10)::before {
+		content:'COMMUNION';
+	}
+	tbody tr:not(:first-child) td:nth-of-type(11)::before {
+		content:'OPTION';
+	}
+
+}
+@media screen and (max-width:461px) {
+	tbody tr:not(:first-child) td::before {
+		margin-left:-95px;
+	}
+}
+	.ajout-content{
+		height: 100%;
+		width: 100%;
+		max-width: 145rem;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+		align-item:center;
+		margin: auto;
+		background: #56CA96;
+	}
+	.liste-content{
+		height: 100%;
+		width: 100%;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+		align-item:center;
+		margin: auto;
+	}
+}

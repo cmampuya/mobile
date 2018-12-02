@@ -1,0 +1,56 @@
+page-profil {
+    
+	
+	.profile-gen-content {
+    background: #56CA96;
+ 
+    .profile-content {
+		height: 100%;
+		width: 100%;
+		max-width: 40rem;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+		align-item:center;
+		margin: auto;
+		background: #FFFFFFF
+    }
+	.profile-image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    ion-row {
+       align-items: center;
+       text-align: center;
+     }
+ 
+     ion-item {
+         border-radius: 30px !important;
+         padding-left: 30px !important;
+         font-size: 0.9em;
+         margin-bottom: 10px;
+         border: 1px solid #ffffff;
+         border-bottom: 0px !important;
+         box-shadow: none !important;
+     }
+ 
+     .signup-col {
+       margin: 0px 16px 0px 16px;
+       padding-bottom: 20px;
+     }
+ 
+     .item-inner {
+       border-bottom-color: #ffffff !important;
+       box-shadow: none !important;
+     }
+ 
+     .submit-btn {
+       background: #51CFB1;
+       border-radius: 30px !important;
+       border: 1px solid #ffffff;
+     }
+  }
+}

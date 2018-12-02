@@ -1,0 +1,84 @@
+page-annonces {
+
+  .annonces-content {
+    background: #56CA96;
+ 
+    .annonces-box {
+      background: #509287;
+      padding: 20px 20px 0px 20px;
+      margin-top: 30px;
+    }
+ 	.container{
+		display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-content: center;
+		align-item:center;
+		width: 100%;
+		height: 100%;
+		background: #F2F2F2
+	}
+	.annonces-content{
+		height: 100%;
+		width: 100%;
+		max-width: 60rem;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+		align-item:center;
+		margin: auto;
+		background: #FFFFFFF;
+	}
+
+    .logo-row {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .home-box {
+		background: #FFFFFFF;
+		padding: 0rem 2rem -0.8rem 10rem;
+		margin-top: 0rem;
+		text-align: center;
+		margin: auto;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+    }
+    ion-row {
+       align-items: center;
+       text-align: center;
+     }
+ 
+     ion-item {
+         border-radius: 30px !important;
+         padding-left: 30px !important;
+         font-size: 0.9em;
+         margin-bottom: 10px;
+         border: 1px solid #ffffff;
+         border-bottom: 0px !important;
+         box-shadow: none !important;
+     }
+ 
+     .signup-col {
+       margin: 0px 16px 0px 16px;
+       padding-bottom: 20px;
+     }
+ 
+     .item-inner {
+       border-bottom-color: #ffffff !important;
+       box-shadow: none !important;
+     }
+ 
+     .submit-btn {
+       background: #51CFB1;
+       border-radius: 30px !important;
+       border: 1px solid #ffffff;
+     }
+  }
+}

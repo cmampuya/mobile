@@ -1,0 +1,340 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+	<button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+	</button>
+	<ion-title>ANNONCES</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="annonces-content">
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+		<div id="div1" style="display:flex;flex-direction:column;align-content:stretch;">
+			<div class="annonces-content">
+				<ion-card>
+
+					<ion-item>
+					<!--<ion-avatar item-start="">
+					  <img src="../assets/imgs/sarah-avatar.png.jpeg">
+					</ion-avatar>-->
+						<ion-label>
+							<h2>Secteur de l'Essonnes</h2>
+							<p>May 12, 1984</p>
+						</ion-label>
+					</ion-item>
+
+					<ion-card-content class="card-content">
+						<p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+					</ion-card-content>
+
+					<ion-row>
+						<ion-col>
+							<button icon-left ion-button small>
+								<ion-icon name="thumbs-up"></ion-icon>
+								30 Likes
+							</button>
+						</ion-col>
+						<ion-col>
+							<button ion-button icon-left small>
+								<ion-icon name="text"></ion-icon>
+								64 Comments
+							</button>
+						</ion-col>
+					</ion-row>
+				</ion-card>
+				<ion-card>
+				  <ion-item>
+					<!--<ion-avatar>
+					  <img src="../assets/imgs/ian-avatar.png">
+					</ion-avatar>-->
+					<ion-label>
+					
+					<h2>Rameau de Paris</h2>
+					<p>June 28, 1990</p>
+				  </ion-label>
+				  </ion-item>
+
+				  <ion-card-content  class="card-content">
+					<p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+				  </ion-card-content>
+
+				  <ion-row>
+					<ion-col>
+					  <button ion-button icon-left small>
+						<ion-icon  name="thumbs-up"></ion-icon>
+						46 Likes
+					  </button>
+					</ion-col>
+					<ion-col>
+					  <button ion-button icon-left small>
+						<ion-icon name="text"></ion-icon>
+						66 Comments
+					  </button>
+					</ion-col>
+				  </ion-row>
+				</ion-card>
+				<ion-card>
+				  <ion-item>
+					<!--<ion-avatar item-start="">
+					  <img src="../assets/imgs/sarah-avatar.png.jpeg">
+					</ion-avatar>-->
+					  <ion-label>
+					<h2>Secteur Paris Centre</h2>
+					<p>May 12, 1984</p>
+				  </ion-label>
+				  </ion-item>
+				  <ion-card-content class="card-content">
+					<p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+				  </ion-card-content>
+				  <ion-row>
+					<ion-col>
+					  <button icon-left ion-button small>
+						<ion-icon name="thumbs-up"></ion-icon>
+						30 Likes
+					  </button>
+					</ion-col>
+					<ion-col>
+					  <button ion-button icon-left small>
+						<ion-icon name="text"></ion-icon>
+						64 Comments
+					  </button>
+					</ion-col>
+				  </ion-row>
+				</ion-card>
+			<ion-card>
+
+			  <ion-item>
+			  <!--<ion-avatar>
+				  <img src="../assets/imgs/ian-avatar.png">
+				</ion-avatar>-->
+				<ion-label>
+				
+				<h2>Secteur du Rhones</h2>
+				<p>June 28, 1990</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content  class="card-content">
+				<p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon  name="thumbs-up"></ion-icon>
+					46 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					66 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+
+			<ion-card>
+
+			  <ion-item>
+				<!--<ion-avatar item-start="">
+				  <img src="../assets/imgs/sarah-avatar.png.jpeg">
+				</ion-avatar>-->
+				  <ion-label>
+				<h2>Secteur Paris Nord</h2>
+				<p>May 12, 1984</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content class="card-content">
+				<p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button icon-left ion-button small>
+					<ion-icon name="thumbs-up"></ion-icon>
+					30 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					64 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+			<ion-card>
+
+			  <ion-item>
+			  <!--<ion-avatar>
+				  <img src="../assets/imgs/ian-avatar.png">
+				</ion-avatar>-->
+				<ion-label>
+				
+				<h2>Rameau de Val de Fontenay</h2>
+				<p>June 28, 1990</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content  class="card-content">
+				<p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon  name="thumbs-up"></ion-icon>
+					46 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					66 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+
+			<ion-card>
+
+			  <ion-item>
+				<!--<ion-avatar item-start="">
+				  <img src="../assets/imgs/sarah-avatar.png.jpeg">
+				</ion-avatar>-->
+				  <ion-label>
+				<h2>Secteur de Provins</h2>
+				<p>May 12, 1984</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content class="card-content">
+				<p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button icon-left ion-button small>
+					<ion-icon name="thumbs-up"></ion-icon>
+					30 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					64 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+			<ion-card>
+
+			  <ion-item>
+				<!--<ion-avatar>
+				  <img src="../assets/imgs/ian-avatar.png">
+				</ion-avatar>-->
+				<ion-label>
+				
+				<h2>Rameau de Bondy</h2>
+				<p>June 28, 1990</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content  class="card-content">
+				<p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon  name="thumbs-up"></ion-icon>
+					46 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					66 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+
+			<ion-card>
+
+			  <ion-item>
+				<!--<ion-avatar item-start="">
+				  <img src="../assets/imgs/sarah-avatar.png.jpeg">
+				</ion-avatar>-->
+				  <ion-label>
+				<h2>Secteur de Lille</h2>
+				<p>May 12, 1984</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content class="card-content">
+				<p >I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button icon-left ion-button small>
+					<ion-icon name="thumbs-up"></ion-icon>
+					30 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					64 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+			<ion-card>
+
+			  <ion-item>
+				<!--<ion-avatar>
+				  <img src="../assets/imgs/ian-avatar.png">
+				</ion-avatar>-->
+				<ion-label>
+				
+				<h2>Rameau de Choisy</h2>
+				<p>June 28, 1990</p>
+			  </ion-label>
+			  </ion-item>
+
+			  <ion-card-content  class="card-content">
+				<p>Your scientists were so preoccupied with whether or not they could, that they didn't stop to think if they should.</p>
+			  </ion-card-content>
+
+			  <ion-row>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon  name="thumbs-up"></ion-icon>
+					46 Likes
+				  </button>
+				</ion-col>
+				<ion-col>
+				  <button ion-button icon-left small>
+					<ion-icon name="text"></ion-icon>
+					66 Comments
+				  </button>
+				</ion-col>
+			  </ion-row>
+
+			</ion-card>
+		</div>
+	</div>
+</ion-content>

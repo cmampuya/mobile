@@ -1,0 +1,56 @@
+<ion-menu [content]="content" >
+	<ion-header>
+		<ion-navbar color="primary" padding>
+			<!--<img src="../assets/imgs/login_icon.png" style="max-width:10%;height:auto;"/>
+			<ion-avatar item-start>
+				<img src="../assets/imgs/login_icon.png" style="max-width:10%;height:auto;">
+				<ion-label>
+					<h2>Pays</h2>
+					<p>12 Mai 2018</p>
+				</ion-label>
+			</ion-avatar>-->
+			<button ion-button icon-only (click)="getprofil()">
+			<ion-card>
+				<ion-item>
+					<ion-avatar item-start>
+						<img src="../assets/imgs/login_icon.png" style="max-width:100%;height:auto;">
+					</ion-avatar>
+					<h2>MAMPUYA Chrisco</h2>
+					<p>19 Juin 2017</p>
+				</ion-item>
+			</ion-card>
+			</button>
+		</ion-navbar>
+		<!--<ion-navbar color="primary">
+			<p style="color:red;font-size:100%;">Que Dieu vous benisse !</p>
+		</ion-navbar>-->
+
+	</ion-header>
+	<ion-content>
+		<ion-list>
+			<button color="primary" ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+				<p style="color:white;font-size:65%;"><ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+				{{ p.title }}</p>
+			</button>
+		</ion-list>
+		<ion-list-header color="secondaire">
+		Adminitrateur
+		</ion-list-header>
+		<ion-list>
+			<button color="primary" ion-item menuClose *ngFor="let pg of admpages" (click)="openPage(pg)">
+				<p style="color:bleu;font-size:65%;">{{ pg.title }}</p>
+			</button>
+		</ion-list>
+
+	</ion-content>
+	<ion-footer>
+		<ion-toolbar color="primary">
+			<button color="primary" ion-item menuClose (click)="deconnexion()">
+				<p style="color:red;font-size:65%;"><ion-icon item-start name="log-out" ></ion-icon>
+				Déconnexion</p>
+			</button>
+		</ion-toolbar>
+	</ion-footer>
+</ion-menu>
+<!-- main navigation -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

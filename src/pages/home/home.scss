@@ -1,0 +1,26 @@
+page-home {
+	.home-gen-content {
+		background: #56CA96;
+ 
+	.home-content{
+		height: 100%;
+		width: 100%;
+		max-width: 60rem;
+		display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: espace-between;
+			align-content: center;
+		align-item:center;
+		margin: auto;
+		background: #56CA96;
+	}
+	.full-image{
+		text-align: center;
+		margin: auto;
+		width: 80%;
+		max-width: 30rem;
+		height: 100%;
+	}
+	 }
+}
